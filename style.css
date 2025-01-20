@@ -395,6 +395,71 @@ nav .title-area {
 
 
 
+/* ==================================================================Footer-section  Design Start===================================================================================> */
+
+footer {
+    width: 100vw;
+    background: rgb(1, 172, 253);
+    padding: 150px 140px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    color: white;
+    font-family: Quicksand;
+}
+
+.brand h2 {
+    font-size: 2.65rem;
+    line-height: 40px;
+    margin-left: 16px;
+}
+
+.brand img {
+    width: 82px;
+    height: 81px;
+}
+
+.left-content p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 36px;
+}
+
+.center-content h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.center-content ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 32px;
+    gap: 20px;
+}
+
+.center-content ul li a {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.right-content h2 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 32px;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
 
 
 
@@ -565,14 +630,14 @@ nav .title-area {
         display: none;
     }
 
-   
+
     /* ==================================================right card===================== */
 
     .right-side {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
-       
+
     }
 
 
@@ -593,6 +658,53 @@ nav .title-area {
         margin-top: 14px;
         margin-bottom: 20px;
         line-height: 18px;
+    }
+
+
+    /* ==================================================================Footer-section  Design Start===================================================================================> */
+
+    footer {
+    
+        padding: 40px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .brand h2 {
+        font-size: 2.25rem;
+    }
+
+  
+    .left-content p {
+        font-size: 1rem;
+    }
+
+    .center-content h2 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 25px;
+    }
+
+    .center-content ul {
+        margin-top: 27px;
+        gap: 17px;
+    }
+
+    .center-content ul li a {
+        font-size: 1.1rem;
+        font-weight: 500;
+        line-height: 21px;
+    }
+
+    .right-content h2 {
+        font-size: 1.4rem;
+        line-height: 22px;
+        margin-bottom: 36px;
+    }
+
+    .social-media {
+        gap: 9;
     }
 
 
