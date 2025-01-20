@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: "Raleway", serif; */
+    font-family: "Quicksand", serif;
+}
+
+/* =======================================Shared Design=================================================================>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.flex {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+.alc {
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* ==================================================================Header Section Design===================================================================================> */
+
+header {
+
+    background: white;
+    width: calc(100vw - 280px);
+    margin: 0 auto;
+
+}
+
+
+
+/* ==================================================================Header Section nav Design===================================================================================> */
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+nav .title-area {
+    gap: 16px;
+}
+
+.menu-list ul {
+    gap: 32px;
+}
+
+.menu-list ul li {
+    list-style-type: none;
+}
+
+.menu-list ul li a {
+
+    text-decoration: none;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.menu-list ul li:nth-child(1) a {
+    color: rgb(254, 163, 1);
+    font-weight: 700;
+}
+
+.menu-list ul li:nth-child(2) a {
+    color: rgb(1, 172, 253);
+}
+
+.menu-list ul li:nth-child(3) a {
+    color: rgb(5, 212, 223);
+
+}
+
+.menu-list ul li:nth-child(4) a {
+
+    color: rgb(93, 88, 239);
+
+}
+
+.contact-button button {
+    border-radius: 12px;
+    background: rgb(254, 163, 1);
+    padding: 10px 60px;
+    border: none;
+}
+
+.contact-button button a {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
