@@ -160,7 +160,8 @@ nav .title-area {
 
 /* ==================================================================curriculam-section  Design Start===================================================================================> */
 
-.curriculam-section {
+.curriculam-section,
+.stories-section {
     background-image: url(assets/bg.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -178,7 +179,8 @@ nav .title-area {
 
 }
 
-.curriculam-section h2 {
+.curriculam-section h2,
+.stories-section h2 {
     text-align: center;
     font-size: 2.9rem;
     font-weight: 700;
@@ -244,10 +246,151 @@ nav .title-area {
     font-weight: 700;
 }
 
+.next {
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    gap: 10px;
+
+}
+
+.next i {
+    color: white;
+    background: rgb(254, 163, 1);
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 50%;
+
+}
 
 
 
+/* ==================================================================Stories-section  Design Start===================================================================================> */
 
+.stories-section {
+    background: url(assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+}
+
+.stories-container {
+    width: calc(100vw - 280px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* =============================Left Card============================ */
+
+.left-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.big-card {
+    height: 100%;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: top;
+}
+
+.big-card img {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.big-card button {
+    width: fit-content;
+    border-radius: 45px;
+    background: rgb(60, 216, 232);
+    border: none;
+    padding: 14px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: Raleway;
+    color: white;
+    margin-left: 40px;
+    margin-top: -24px;
+
+}
+
+.big-card h3 {
+    margin-top: 40px;
+    margin-left: 40px;
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    margin-right: 40%;
+}
+
+.big-card p {
+    margin-left: 40px;
+    margin-top: 52px;
+    margin-bottom: 34px;
+    margin-right: 20%;
+    color: rgb(102, 102, 102);
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+/* ==================================================right card===================== */
+
+.right-side {
+    height: calc(100% - 20px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.small-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+
+.small-card img {
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.small-card button {
+    width: fit-content;
+    border-radius: 45px;
+    background: rgb(60, 216, 232);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: Raleway;
+    color: white;
+    margin-left: 40px;
+    margin-top: -20px;
+}
+
+.small-card h3 {
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 40px;
+    margin-right: 80px;
+    text-align: left;
+    margin-top: 23px;
+    margin-bottom: 35px;
+    line-height: 30px;
+}
 
 
 
@@ -376,7 +519,7 @@ nav .title-area {
     .card-section {
         flex-direction: column;
         width: calc(100vw - 40px);
-    
+
     }
 
     .curriculam-section h2 {
@@ -386,20 +529,74 @@ nav .title-area {
 
     .card {
         padding: 60px 20px;
-       
+
     }
 
 
     .card h3 {
         font-size: 1.6rem;
-    
+
     }
 
     .card p {
         width: 100%;
     }
 
-  
+    .next {
+        display: none;
+    }
+
+
+
+    /* ==================================================================Stories-section  Design Start===================================================================================> */
+
+    .stories-section {
+        background: url(assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+    }
+
+    .stories-container {
+        width: calc(100vw - 40px);
+        display: flex;
+    }
+
+    /* =============================Left Card============================ */
+
+    .left-side {
+        display: none;
+    }
+
+   
+    /* ==================================================right card===================== */
+
+    .right-side {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+       
+    }
+
+
+    .small-card button {
+        padding: 5px 10px;
+        font-size: 0.5rem;
+        font-weight: 500;
+        margin-left: 22px;
+        margin-top: -7.5px;
+    }
+
+    .small-card h3 {
+
+        font-size: 0.6rem;
+        font-weight: 700;
+        margin-left: 22px;
+        margin-right: 20px;
+        margin-top: 14px;
+        margin-bottom: 20px;
+        line-height: 18px;
+    }
+
+
+
 
 
 
