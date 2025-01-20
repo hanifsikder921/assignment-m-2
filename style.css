@@ -124,9 +124,11 @@ nav .title-area {
     gap: 50px;
 
 }
-.hero-content{
+
+.hero-content {
     gap: 24px;
 }
+
 .hero-content h1 {
     font-family: Quicksand;
     font-size: 56px;
@@ -145,19 +147,102 @@ nav .title-area {
 .hero-content p {
     color: rgb(17, 17, 17);
     font-family: Quicksand;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: 400;
     width: 65%;
 }
 
-.endroll-button button{
+.endroll-button button {
     padding: 10px 45px;
     background-color: black;
 }
 
 
+/* ==================================================================curriculam-section  Design Start===================================================================================> */
+
+.curriculam-section {
+    background-image: url(assets/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 60px 0px;
+}
 
 
+.card-section {
+    width: calc(100vw - 280px);
+    margin: 0 auto;
+    justify-content: center;
+    gap: 28px;
+
+
+}
+
+.curriculam-section h2 {
+    text-align: center;
+    font-size: 2.9rem;
+    font-weight: 700;
+    margin-bottom: 80px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    padding: 60px 40px 80px;
+    box-sizing: border-box;
+    border-radius: 18px;
+    align-items: center;
+    text-align: center;
+    border: 0.94px solid rgb(222, 245, 255);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+}
+
+.c-1 {
+
+    border: 0.94px solid rgb(222, 245, 255);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+
+}
+
+.c-2 {
+    border: 0.94px solid rgb(255, 244, 220);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.c-3 {
+    border: 0.94px solid rgb(242, 232, 255);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.card img {
+    width: 137px;
+    height: 137px;
+}
+
+.card h3 {
+    color: rgb(32, 32, 32);
+    font-family: Quicksand;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.card p {
+    color: rgb(128, 128, 128);
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 80%;
+}
+
+.card button {
+    border: none;
+    background: none;
+    color: rgb(100, 200, 255);
+    font-family: Quicksand;
+    font-size: 1rem;
+    font-weight: 700;
+}
 
 
 
@@ -245,47 +330,76 @@ nav .title-area {
 
 
 
-/* ==================================================================Hero Section Design Start===================================================================================> */
+    /* ==================================================================Hero Section Design Start===================================================================================> */
 
-.hero-section {
-    width: calc(100vw - 40px);
-    margin: 0 auto;
-    gap: 50px;
-    flex-direction: column-reverse;
-    margin-top: 30px;
+    .hero-section {
+        width: calc(100vw - 40px);
+        flex-direction: column-reverse;
+        margin-top: 30px;
+
+
+    }
+
+    .hero-content {
+        gap: 18px;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+
+    }
+
+    .hero-content p {
+        font-size: 14px;
+        font-weight: 500;
+        width: 98%;
+        margin: 0 auto;
+    }
+
+    .endroll-button button {
+        padding: 10px 24px;
+        background-color: black;
+    }
+
+    .endroll-button button a {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .hero-photo img {
+        width: 100%;
+    }
+
+    /* ==================================================================curriculam-section  Design Start===================================================================================> */
+
+    .card-section {
+        flex-direction: column;
+        width: calc(100vw - 40px);
     
+    }
 
-}
-.hero-content{
-    gap: 18px;
-    text-align: center;
-}
-.hero-content h1 {
-    font-size: 32px;
-   
-}
+    .curriculam-section h2 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
 
-.hero-content p {
-    font-size: 14px;
-    font-weight: 500;
-    width: 98%;
-    margin: 0 auto;
-}
+    .card {
+        padding: 60px 20px;
+       
+    }
 
-.endroll-button button{
-    padding: 10px 24px;
-    background-color: black;
-    font-size: 1rem;
-    font-weight: 700;
-}
-.endroll-button button a{
-    font-size: 1rem;
-    font-weight: 700;
-}
 
-.hero-photo img{
-    width: 100%;
-}
+    .card h3 {
+        font-size: 1.6rem;
+    
+    }
+
+    .card p {
+        width: 100%;
+    }
+
+  
 
 
 
