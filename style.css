@@ -255,6 +255,7 @@ nav .title-area h1 {
     font-family: Raleway;
     font-size: 1rem;
     font-weight: 500;
+    line-height: 30px;
     width: 80%;
 }
 
@@ -517,6 +518,11 @@ footer {
 /* ====================================================Hover Effect Section=================================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 /* =================Title Hover Effect Apply====================================> */
 
+::selection{
+    background-color: antiquewhite;
+    color: blueviolet;
+}
+
 .title h1:hover {
     cursor: pointer;
     color: rgb(1, 172, 253);
@@ -709,6 +715,7 @@ ul li a:hover::after {
         font-weight: 500;
         width: 98%;
         margin: 0 auto;
+        line-height: 18px;
     }
 
     .endroll-button button {
