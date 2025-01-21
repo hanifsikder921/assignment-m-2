@@ -2,11 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
     /* font-family: "Raleway", serif; */
     font-family: "Quicksand", serif;
+    overflow-x: hidden;
+
 }
 
 /* =======================================Shared Design=================================================================>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -65,6 +68,16 @@ nav .title-area {
     gap: 16px;
 }
 
+nav .title-area h1 {
+    color: rgb(17, 17, 17);
+    font-family: Quicksand;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
+    transition: 0.3s;
+
+}
+
 .menu-list ul {
     gap: 32px;
 }
@@ -75,10 +88,13 @@ nav .title-area {
 
 .menu-list ul li a {
 
+    position: relative;
+    display: block;
     text-decoration: none;
     font-family: Quicksand;
     font-size: 20px;
     font-weight: 500;
+    transition: 0.2s;
 }
 
 .menu-list ul li:nth-child(1) a {
@@ -107,6 +123,7 @@ nav .title-area {
     background: rgb(254, 163, 1);
     padding: 10px 60px;
     border: none;
+    transition: 0.2s;
 }
 
 .contact-button button a,
@@ -155,6 +172,7 @@ nav .title-area {
 .endroll-button button {
     padding: 10px 45px;
     background-color: black;
+    transition: 0.2s;
 }
 
 
@@ -162,6 +180,8 @@ nav .title-area {
 
 .curriculam-section,
 .stories-section {
+    width: 100vw;
+    margin: 0 auto;
     background-image: url(assets/bg.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -185,6 +205,7 @@ nav .title-area {
     font-size: 2.9rem;
     font-weight: 700;
     margin-bottom: 80px;
+    transition: 0.3s;
 }
 
 .card {
@@ -270,9 +291,17 @@ nav .title-area {
 
 
 /* ==================================================================Stories-section  Design Start===================================================================================> */
+.right-side .invisivle {
+    display: none;
+}
 
 .stories-section {
     background: url(assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .stories-container {
@@ -282,6 +311,24 @@ nav .title-area {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
+
+.view-button {
+    width: fit-content;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    background: rgb(17, 17, 17);
+    padding: 10px 50px;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    align-content: center;
+    margin-top: 90px;
+    transition: 0.2s;
+}
+
+
 
 /* =============================Left Card============================ */
 
@@ -304,12 +351,13 @@ nav .title-area {
 .big-card img {
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+    object-fit: cover;
 }
 
 .big-card button {
     width: fit-content;
     border-radius: 45px;
-    background: rgb(60, 216, 232);
+    background: #B80130;
     border: none;
     padding: 14px 20px;
     font-size: 1rem;
@@ -366,9 +414,10 @@ nav .title-area {
 }
 
 .small-card button {
+    min-width: 180px;
     width: fit-content;
     border-radius: 45px;
-    background: rgb(60, 216, 232);
+    background: rgb(1, 172, 253);
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
@@ -442,10 +491,13 @@ footer {
 }
 
 .center-content ul li a {
+    position: relative;
+    display: inline-block;
     color: white;
     font-size: 20px;
     font-weight: 500;
     line-height: 25px;
+    transition: 0.2s;
 }
 
 .right-content h2 {
@@ -462,16 +514,110 @@ footer {
 
 
 
+/* ====================================================Hover Effect Section=================================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* =================Title Hover Effect Apply====================================> */
+
+.title h1:hover {
+    cursor: pointer;
+    color: rgb(1, 172, 253);
+    font-weight: 900;
+}
+
+.logo img:hover {
+    cursor: pointer;
+}
+
+/* List item Hover Effect====================================> */
+ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 3px;
+    background-color: blueviolet;
+    transition: width 0.3s ease-in-out;
+}
+
+ul li a:hover {
+    font-weight: 900;
+}
+
+ul li a:hover::after {
+    width: 100%;
+}
 
 
 
 
 
 
+/* Button Hover Effect=======================================> */
+.btn-hover:hover {
+    background-color: rgb(1, 172, 253);
+    cursor: pointer;
+}
 
 
+/* Card Hover Effect=======================================> */
+
+.card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-30px);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    cursor: grab;
+
+}
+
+.card>button:hover {
+    cursor: pointer;
+}
+
+.small-card button:hover,
+.big-card button:hover {
+    cursor: text;
+}
+
+/* Arrow Button Hover Effect================================> */
+
+.arrow {
+    transition: 0.4s;
+}
+
+.arrow:hover {
+    background-color: rgb(1, 172, 253);
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(1, 172, 253, 0.76);
+}
+
+/* our stories section hover Effect Apply=======================> */
+.big-card,
+.small-card {
+    transition: 0.2s;
+}
+
+.big-card:hover,
+.small-card:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    scale: 1.03;
+    cursor: pointer;
+}
 
 
+/* =========================social-media icon hover Effect==================================== */
+
+.social-media img {
+    transition: 0.2s;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
 
 
 
@@ -624,6 +770,17 @@ footer {
         display: flex;
     }
 
+    .view-button {
+        padding: 10px 40px;
+        margin-top: 20px;
+        font-weight: 600;
+        padding: 6px 40px;
+    }
+
+    .right-side .invisivle {
+        display: grid;
+    }
+
     /* =============================Left Card============================ */
 
     .left-side {
@@ -642,11 +799,12 @@ footer {
 
 
     .small-card button {
+        min-width: 90px;
         padding: 5px 10px;
         font-size: 0.5rem;
         font-weight: 500;
         margin-left: 22px;
-        margin-top: -7.5px;
+        margin-top: -10px;
     }
 
     .small-card h3 {
@@ -664,7 +822,7 @@ footer {
     /* ==================================================================Footer-section  Design Start===================================================================================> */
 
     footer {
-    
+
         padding: 40px 16px;
         display: flex;
         flex-direction: column;
@@ -675,7 +833,7 @@ footer {
         font-size: 2.25rem;
     }
 
-  
+
     .left-content p {
         font-size: 1rem;
     }
