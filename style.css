@@ -8,7 +8,7 @@
 body {
     /* font-family: "Raleway", serif; */
     font-family: "Quicksand", serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 
 }
 
@@ -518,7 +518,7 @@ footer {
 /* ====================================================Hover Effect Section=================================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 /* =================Title Hover Effect Apply====================================> */
 
-::selection{
+::selection {
     background-color: antiquewhite;
     color: blueviolet;
 }
@@ -639,21 +639,17 @@ ul li a:hover::after {
 
 
 
+/* ======================================================================Responsive Design For Mobile Start ==============================================================> */
+
+@media only screen and (min-width: 200px) and (max-width: 576px) {
 
 
 
-/* ======================================================================Responsive Design For Mobile ============================================================== */
-/* ======================================================================Responsive Design For Mobile ============================================================== */
 
 
 
-@media screen and (max-width: 576px) {
 
     /* ==========================================================Navigation  Bar Design Start============================== */
-
-
-
-
 
     nav {
         width: calc(100vw - 40px);
@@ -874,6 +870,9 @@ ul li a:hover::after {
 
 
 
+}
+
+/* ======================================================================Responsive Design For Mobile End ==============================================================> */
 
 
 
@@ -888,5 +887,387 @@ ul li a:hover::after {
 
 
 
+
+
+
+
+
+
+/* ======================================================================Responsive Design For Tablet Start ==============================================================> */
+
+@media only screen and (min-width: 577px) and (max-width:768px) {
+
+    .contact-button {
+        display: none;
+    }
+
+    /* Nav Section===============================================================> */
+    nav {
+        width: calc(100vw - 40px);
+    }
+
+
+    .menu-list ul {
+        display: none;
+
+    }
+
+    .menu-list ul li,
+    .contact-button button {
+        list-style-type: none;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    /* Hero Section===============================================================> */
+
+
+    .hero-section {
+        width: calc(100vw - 40px);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+    }
+
+    .hero-section .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .hero-photo img {
+        width: 100%;
+    }
+
+
+
+    /* curriculam-section Section===============================================================> */
+
+    .curriculam-section {
+
+        padding: 20px 0px;
+    }
+
+    .curriculam-section h2 {
+        font-size: 2rem;
+    }
+
+    .card-section {
+        width: calc(100vw - 40px);
+        margin: 0 auto;
+        flex-direction: column;
+
+
+    }
+
+    .card {
+        min-height: 250px;
+
+    }
+
+    .arrow {
+        display: none;
+    }
+
+
+
+
+
+
+
+    /* stories-section Section===============================================================> */
+
+    .stories-section {
+        padding: 20px 0px;
+    }
+
+    .stories-container {
+        width: calc(100vw - 40px);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    /* Footer-section Section===============================================================> */
+    footer .left-content {
+        display: none;
+    }
+
+    footer {
+        padding: 20px;
+        display: flex;
+        gap: 32px;
+        justify-content: space-around;
+    }
+
+    .brand h2 {
+        font-size: 2rem;
+        line-height: 40px;
+        margin-left: 16px;
+    }
+
+
+
+
+}
+
+/* ======================================================================Responsive Design For Tablet End ==============================================================> */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================================Responsive Design For Laptop Start ==============================================================> */
+
+@media only screen and (min-width: 769px) and (max-width:992px) {
+
+
+    /* Nav Section===============================================================> */
+    nav {
+        width: calc(100vw - 40px);
+    }
+
+    .menu-icon,
+    .contact-button {
+        display: none;
+        justify-content: space-between;
+    }
+
+
+
+    /* Hero Section===============================================================> */
+
+    .hero-section {
+        width: calc(100vw - 40px);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+    }
+
+    .hero-section .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .hero-photo img {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* curriculam-section Section===============================================================> */
+
+    .curriculam-section {
+
+        padding: 20px 0px;
+    }
+
+    .curriculam-section h2 {
+        font-size: 2rem;
+    }
+
+    .card-section {
+        width: calc(100vw - 40px);
+        margin: 0 auto;
+        flex-direction: column;
+
+
+    }
+
+    .card {
+        min-height: 250px;
+
+    }
+
+    .arrow {
+        display: none;
+    }
+
+
+
+    /* stories-section Section===============================================================> */
+
+    .stories-section {
+        padding: 20px 0px;
+    }
+
+    .stories-container {
+        width: calc(100vw - 40px);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    /* Footer-section Section===============================================================> */
+
+    footer {
+        padding: 40px 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+        justify-items: center;
+    }
+
+    .brand h2 {
+        font-size: 2rem;
+        line-height: 40px;
+        margin-left: 16px;
+    }
+
+
+
+
+
+}
+
+
+
+/* ======================================================================Responsive Design For Laptop End ================================================================> */
+
+
+/* ======================================================================Responsive Design For Medium large================================================================> */
+@media only screen and (min-width: 993px) and (max-width:1200px) {
+
+
+    /* Nav Section===============================================================> */
+    nav {
+        width: calc(100vw - 40px);
+    }
+
+    .menu-icon,
+    .contact-button {
+        display: none;
+        justify-content: space-between;
+    }
+
+
+
+    /* Hero Section===============================================================> */
+
+    .hero-section {
+        width: calc(100vw - 80px);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+    }
+
+    .hero-section .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .hero-photo img {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* curriculam-section Section===============================================================> */
+
+    .curriculam-section {
+        padding: 20px 0px;
+    }
+
+    .curriculam-section h2 {
+        font-size: 2rem;
+    }
+
+    .card-section {
+        width: calc(100vw - 80px);
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-basis: calc(100vw - 40px);
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+
+
+    }
+
+    .card {
+        min-height: 250px;
+        min-width: 400px;
+        max-width: 450px;
+
+    }
+
+    .c-3{
+        align-self: flex-start;
+    }
+
+   
+
+
+
+    .arrow {
+        display: none;
+    }
+
+
+
+    /* stories-section Section===============================================================> */
+
+    .stories-section {
+        padding: 20px 0px;
+    }
+
+    .stories-container {
+        width: calc(100vw - 80px);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    /* Footer-section Section===============================================================> */
+
+    footer {
+        padding: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+        justify-items: center;
+    }
+
+    .brand h2 {
+        font-size: 2rem;
+        line-height: 40px;
+        margin-left: 16px;
+    }
+
+
+
+
+
+}
 
 }
